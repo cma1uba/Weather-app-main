@@ -137,3 +137,66 @@ search-section{
 .detail-box .value{
     font-size: 24px;
 }
+
+.daily-forecast{
+    margin-bottom: 20px;
+}
+.forecast-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.day-card{
+    background: hsl(243, 23%, 24%);
+    border-radius: 12px;
+    text-align: center;
+    border: solid 1px hsl(240, 23%, 30%);
+}
+.day-card img{
+    max-width: 50px;
+}
+.day-card .temps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hourly-forecast{
+    background:  hsl(243, 27%, 20%);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.hourly-forecast .top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-row .dropdown{
+    display: flex;
+    padding: 8px;
+    background: hsl(243, 27%, 24%);
+    border: solid 1px hsl(240, 23%, 30%);
+    border-radius: 10px;
+    gap: 8px;
+}
+.top-row img{
+    max-width: 15px;
+}
+.hour-item{
+    padding: 0 15px;
+    margin: 12px auto;
+    display: flex;
+    justify-content: space-between;
+    background: hsl(243, 20%, 24%);
+    border: solid 2px hsl(240, 23%, 30%);
+    border-radius: 12px;
+}
+.hour-item .temps{
+    text-align: right;
+    width: 60%;
+}
+.hour-item img{
+    max-width: 50px;
+}
