@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: DM Sans, sans-serif;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.attribution{
+    color: hsl(228, 45%, 44%);
+}
+.weather-app{
+    background: hsl(243, 96%, 9%);
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 17px;
+}
+.app-header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.logo img{
+    max-width: 120px;
+}
+.units-toggle{
+    background: hsl(243, 23%, 24%);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+.units-toggle img{
+    max-width: 15px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 25px;
+}
+search-section{
+    margin: auto;
+}
+.search-input{
+    width: 100%;
+    background: hsl(243, 23%, 24%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.search-input img{
+    max-width: 18px;
+    margin: 10px;
+}
+.search-input input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+}
+.search-btn{
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: hsl(233, 67%, 56%);
+}
+
+.current-weather{
+    
+}
+.main-card{
+    padding: 20px;
+    text-align: center;
+    background-image: url("../images/bg-today-small.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.main-card h2{
+    font-size: 30px;
+    line-height: 0.5;
+}
+.main-card img{
+    max-width: 70px;
+}
+.main-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.main-detail span{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 60px;
+}
+.small-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.detail-box{
+    padding: 0 15px;
+    background: hsl(243, 23%, 24%);
+    border-radius: 12px;
+    border: solid 1px hsl(240, 23%, 30%);
+   
+}
+.detail-box p{
+    font-size: 16px;
+    line-height: 0.6;
+}
+.detail-box .value{
+    font-size: 24px;
+}
