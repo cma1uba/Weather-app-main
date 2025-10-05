@@ -21,12 +21,34 @@
 				    <div class="logo">
 				      <img src="images/logo.svg" alt="logo image">
 				    </div>
-				    <div class="units-toggle">
+				    <div class="units-toggle" onclick="toggleMenu()">
 				      <img src="images/icon-units.svg" alt="units toggle icon">
 				      <span>units</span>
 				      <img src="images/icon-dropdown.svg" alt="dropdown icon">
+				
 				    </div>
-				    
+				    <div class="units-menu-wrap" id="subMenu">
+				      <div class="sub-menu">
+				      <div class="units-menu">
+				          <h3>Switch to Imperial</h3>
+				      </div>
+				    <div class="units-type">
+				      <p class="units-name">Temperature</p>
+				      <p class="celsius">Celsius(°C)</p>
+				      <p class="fahrenheit">Fahrenheit(F)</p>
+				    </div><hr>
+				    <div class="units-type">
+				      <p class="units-name">Wind Speed</p>
+				      <p class="kilos">km/h</p>
+				      <p class="imperial">mph</p>
+				    </div><hr>
+				    <div class="units-type">
+				      <p class="units-name">Precipitation</p>
+				      <p class="millimeters">Millimeters(mm)</p>
+				      <p class="imperial">Inches(in)</p>
+				    </div>
+				      </div>
+				    </div>
 				   </header>
 				  
 				  <h1 class="main-title">How's the sky looking today?</h1>
@@ -197,5 +219,7 @@
     Coded by <a href="#">Maluba</a>.
   </div>
 				</div>
+  
+  <script src="scripts/script.js"></script>
 </body>
 </html>
