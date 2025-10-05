@@ -230,7 +230,6 @@ img{
         align-items: center;
         gap: 15px;
         padding: 15px;
-        border: 2px solid green;
         box-sizing: border-box;
     }
     .left-column{
