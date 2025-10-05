@@ -28,6 +28,7 @@ img{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    position: relative;
 }
 .logo img{
     max-width: 120px;
@@ -42,6 +43,25 @@ img{
 }
 .units-toggle img{
     max-width: 15px;
+}
+
+.units-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 200px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.units-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    border-radius: 12px;
+    background: hsl(243, 20%, 24%);
+    padding: 20px;
+    margin: 10px;
 }
 
 .main-title{
@@ -230,6 +250,7 @@ img{
         align-items: center;
         gap: 15px;
         padding: 15px;
+        border: 2px solid green;
         box-sizing: border-box;
     }
     .left-column{
@@ -273,4 +294,4 @@ img{
     .forecast-grid{
         grid-template-columns: repeat(7, 1fr);
     }
-    }
+}
