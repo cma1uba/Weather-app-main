@@ -48,7 +48,7 @@ img{
 .units-menu-wrap{
     position: absolute;
     top: 100%;
-    right: 5%;
+    right: 0;
     width: 200px;
     max-height: 0px;
     overflow: hidden;
