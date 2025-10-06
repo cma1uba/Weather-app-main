@@ -45,25 +45,76 @@ img{
     max-width: 15px;
 }
 
-.units-menu-wrap{
+/* units dropdown menu styling */
+.dropdown-menu{
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 90%;
+    right: 3%;
+    z-index: 100;
     width: 200px;
+    margin-top: 5px;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
 }
-.units-menu-wrap.open-menu{
-    max-height: 400px;
+.dropdown-menu.open-menu{
+    max-height: 450px;
 }
 .sub-menu{
-    border-radius: 12px;
-    background: hsl(243, 20%, 24%);
-    padding: 20px;
-    margin: 10px;
+    border: 2px solid hsl(240, 23%, 30%);
+    border-radius: 10px;
+    background: hsl(243, 23%, 24%);
+    padding: 10px
+}
+.sub-menu hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: hsl(240, 23%, 30%);
+}
+.switch-div{
+    width: 100%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.switch-div:hover{
+    background: hsl(243, 18%, 30%);
+    border: 1px solid hsl(240, 23%, 30%);
+}
+.units-switch{
+    font-size: 16px;
+}
+.dropdown-category{
+    margin-top: 15px;
+}
+.category-title{
+    color: hsl(240, 6%, 70%);
+    font-size: 14px;
+}
+.dropdown-item{
+    width: 100%;
+    height: 10px;
+    padding: 18px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+.dropdown-item:hover{
+    background: hsl(243, 18%, 30%);
+    border: 1px solid hsl(240, 23%, 30%);
+}
+.dropdown-item p{
+    font-size: 14px;
+}
+input[type="checkbox"]{
+    appearance: none;
 }
 
+/* main content styling */
 .main-title{
     text-align: center;
     font-size: 50px;
@@ -222,7 +273,7 @@ img{
 }
 @media (min-width: 500px){
     .weather-app{
-        max-width: 1100px;
+        max-width: 950px;
     }
     .main-title{
         font-size: 35px;
@@ -246,11 +297,9 @@ img{
     .main-grid-layout{
         width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 15px;
-        padding: 15px;
-        border: 2px solid green;
+        justify-content: center;
+        gap: 30px;
         box-sizing: border-box;
     }
     .left-column{
