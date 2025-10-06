@@ -27,26 +27,45 @@
 				      <img src="images/icon-dropdown.svg" alt="dropdown icon">
 				
 				    </div>
-				    <div class="units-menu-wrap" id="subMenu">
+				    <div class="dropdown-menu" id="subMenu">
 				      <div class="sub-menu">
-				      <div class="units-menu">
-				          <h3>Switch to Imperial</h3>
+				        <div class="switch-div">
+				        <span class="units-switch">Switch to Imperial</span>
 				      </div>
-				    <div class="units-type">
-				      <p class="units-name">Temperature</p>
-				      <p class="celsius">Celsius(°C)</p>
-				      <p class="fahrenheit">Fahrenheit(F)</p>
-				    </div><hr>
-				    <div class="units-type">
-				      <p class="units-name">Wind Speed</p>
-				      <p class="kilos">km/h</p>
-				      <p class="imperial">mph</p>
-				    </div><hr>
-				    <div class="units-type">
-				      <p class="units-name">Precipitation</p>
-				      <p class="millimeters">Millimeters(mm)</p>
-				      <p class="imperial">Inches(in)</p>
-				    </div>
+				        <div class="dropdown-category">
+				          <span class="category-title">Temperature</span>
+				          <div class="dropdown-item">
+				            <p class="temp-celsius">Celsius  (°C)</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				          <div class="dropdown-item">
+				            <p class="temp-fahrenheit">Fahrenheit  (°F)</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				        </div><hr>
+				        <div class="dropdown-category">
+				          <span class="category-title">Wind Speed</span>
+				          <div class="dropdown-item">
+				            <p class="wind-kmh">km/h</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				          <div class="dropdown-item">
+				            <p class="wind-mph">mph</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				        </div><hr>
+				        <div class="dropdown-category">
+				          <span class="category-title">Precipitation</span>
+				          <div class="dropdown-item">
+				            <p class="precip-mm">Millimeters (mm)</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				          <div class="dropdown-item">
+				            <p class="precip-in">Inches (in)</p>
+				            <input type="checkbox" class="selected">
+				          </div>
+				        </div>
+				        
 				      </div>
 				    </div>
 				   </header>
@@ -220,6 +239,6 @@
   </div>
 				</div>
   
-  <script src="javascript/script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
