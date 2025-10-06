@@ -182,10 +182,37 @@
 				  <section class="hourly-forecast">
 				    <div class="top-row">
 				    <h2>Hourly forecast</h2>
-				      <div class="dropdown">
+				      <div class="dropdown" onclick="toggleDropdown()">
 				        <span>Saturday</span>
 				        <img src="images/icon-dropdown.svg" alt="dropdown icon">
 				      </div>
+				      
+				      <div class="dropdown-menu" id="dayDropdown">
+				        <div class="sub-menu">
+				          <div class="dropdown-item">
+				            <p>Monday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Tuesday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Wednesday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Thursday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Friday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Saturday</p>
+				          </div>
+				          <div class="dropdown-item">
+				            <p>Sunday</p>
+				          </div>
+				        </div>
+				      </div>
+				      
 				    </div>
 				    <div class="hourly-list">
 				      <div class="hour-item">
@@ -241,4 +268,4 @@
   
   <script src="javascript/script.js"></script>
 </body>
-						  </html>
+							  </html>
