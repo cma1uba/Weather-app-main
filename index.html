@@ -12,7 +12,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Weather app</title>
+  <title>Weather Now</title>
 
 </head>
 <body>
@@ -30,41 +30,20 @@
 				    <div class="dropdown-menu" id="subMenu">
 				      <div class="sub-menu">
 				        <div class="switch-div">
-				        <span class="units-switch">Switch to Imperial</span>
-				      </div>
-				        <div class="dropdown-category">
-				          <span class="category-title">Temperature</span>
+				        <h4 class="units-switch">Metric / Imperial<h4>
+				      </div><hr>
+				        <div class="dropdown-options">
+				          
 				          <div class="dropdown-item">
-				            <p class="temp-celsius">Celsius  (°C)</p>
-				            <input type="checkbox" class="selected">
-				          </div>
+				            <label class="metric"><p>Metric</p>
+				            <input type="checkbox" class="selected"></label>
+				          </div><hr>
 				          <div class="dropdown-item">
-				            <p class="temp-fahrenheit">Fahrenheit  (°F)</p>
-				            <input type="checkbox" class="selected">
-				          </div>
-				        </div><hr>
-				        <div class="dropdown-category">
-				          <span class="category-title">Wind Speed</span>
-				          <div class="dropdown-item">
-				            <p class="wind-kmh">km/h</p>
-				            <input type="checkbox" class="selected">
-				          </div>
-				          <div class="dropdown-item">
-				            <p class="wind-mph">mph</p>
-				            <input type="checkbox" class="selected">
-				          </div>
-				        </div><hr>
-				        <div class="dropdown-category">
-				          <span class="category-title">Precipitation</span>
-				          <div class="dropdown-item">
-				            <p class="precip-mm">Millimeters (mm)</p>
-				            <input type="checkbox" class="selected">
-				          </div>
-				          <div class="dropdown-item">
-				            <p class="precip-in">Inches (in)</p>
-				            <input type="checkbox" class="selected">
-				          </div>
+				            <label class="imperial"><p>Imperial</p>
+				            <input type="checkbox" class="selected"></label>
+				          </div><hr>
 				        </div>
+				         
 				        
 				      </div>
 				    </div>
@@ -73,11 +52,14 @@
 				  <h1 class="main-title">How's the sky looking today?</h1>
 				  
 				  <section class="search-section">
-				    <div class="search-input">
+				    <div class="search">
 				      <img src="images/icon-search.svg" alt="search icon">
 				      <input type="text" placeholder="Search for a place...">
 				      </div>
 				    <button class="search-btn">Search</button>
+				    <div class="error">
+      <p>invalid city name</p>
+    </div>
 				  </section>
 				  
 				  <div class="main-grid-layout">
@@ -87,30 +69,30 @@
 				  <section class="current-weather">
 				    <div class="main-card">
 				      <div class="date-detail">
-				    <h2>Berlin, Germany</h2>
-				    <p>Saturday, Oct 4, 2025</p>
+				    <h2 class="cityCountry">Berlin, Germany</h2>
+				    <p class="currDate">Saturday, Oct 4, 2025</p>
 				      </div>
 				    <div class="main-detail">
 				      <img src="images/icon-sunny.webp" alt="icon">
-				      <span class="temperature">20&deg;</span>
+				      <div class="temperature"><span class="temp">20</span>&deg;</div>
 				    </div>
 				    </div>
 				    <div class="small-cards">
 				      <div class="detail-box">
 				        <p>Feels like</p>
-				        <p class="value">18&deg;</p>
+				        <p class="value feels-like">18&deg;</p>
 				      </div>
 				      <div class="detail-box">
 				        <p>Humidity</p>
-				        <p class="value">46%</p>
+				        <p class="value humidity">46%</p>
 				      </div>
 				      <div class="detail-box">
 				        <p>Wind</p>
-				        <p class="value">14 km/h</p>
+				        <p class="value wind">14 km/h</p>
 				      </div>
 				      <div class="detail-box">
-				        <p>Preciptstion</p>
-				        <p class="value">0 mm</p>
+				        <p>Precipitation</p>
+				        <p class="value precip">0 mm</p>
 				      </div>
 				    </div>
 				  </section>
@@ -268,4 +250,4 @@
   
   <script src="javascript/script.js"></script>
 </body>
-							  </html>
+	</html>
