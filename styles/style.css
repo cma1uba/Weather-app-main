@@ -9,6 +9,9 @@ body{
     font-size: 11px;
     text-align: center;
 }
+.error{
+    display: none;
+}
 img{
     width: 100%;
 }
@@ -78,19 +81,16 @@ img{
 }
 .switch-div{
     width: 100%;
-    padding: 10px 5px;
+    padding: 0 5px;
     box-sizing: border-box;
     border-radius: 7px;
 }
-.switch-div:hover{
-    background: hsl(243, 18%, 30%);
-    border: 1px solid hsl(240, 23%, 30%);
-}
+
 .units-switch{
     font-size: 16px;
 }
-.dropdown-category{
-    margin-top: 15px;
+.dropdown-options{
+    margin-top: 5px;
 }
 .category-title{
     color: hsl(240, 6%, 70%);
@@ -100,24 +100,42 @@ img{
     width: 100%;
     height: 10px;
     padding: 18px 5px;
-    margin: 5px 0;
+    margin: auto 0;
     box-sizing: border-box;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 7px;
 }
 .dropdown-item:hover{
     background: hsl(243, 18%, 30%);
     border: 1px solid hsl(240, 23%, 30%);
 }
-.dropdown-item p{
+.dropdown-item label{
+    width: 100%;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 input[type="checkbox"]{
     appearance: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
 }
-
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* main content styling */
 .main-title{
     text-align: center;
@@ -130,7 +148,7 @@ input[type="checkbox"]{
     margin: auto;
     margin-bottom: 20px;
 }
-.search-input{
+.search{
     width: 100%;
     background: hsl(243, 23%, 24%);
     display: flex;
@@ -140,14 +158,14 @@ input[type="checkbox"]{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.search-input:hover{
+.search:hover{
     background: hsl(243, 23%, 30%);
 }
-.search-input img{
+.search img{
     max-width: 18px;
     margin: 10px;
 }
-.search-input input{
+.search input{
     border: none;
     outline: none;
     background: none;
@@ -359,3 +377,5 @@ input[type="checkbox"]{
         grid-template-columns: repeat(7, 1fr);
     }
 }
+
+
