@@ -11,6 +11,9 @@ body{
 }
 .error{
     display: none;
+    padding: 10px 0;
+    text-align: center;
+    color: #ff6b6b;
 }
 img{
     width: 100%;
@@ -25,6 +28,10 @@ img{
     margin: 0 auto;
     padding: 17px;
 }
+.weather {
+    display: block;
+}
+
 .app-header{
     padding: 10px;
     display: flex;
@@ -55,14 +62,14 @@ img{
 /* units dropdown menu styling */
 .dropdown-menu{
     position: absolute;
-    top: 90%;
-    right: 3%;
+    top: 100%; 
+    right: 0;
     z-index: 100;
     width: 200px;
+    max-height: 0;
     margin-top: 5px;
-    max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.3s;
+    transition: max-height 0.3s ease-in-out;
 }
 .dropdown-menu.open-menu{
     max-height: 450px;
@@ -85,7 +92,6 @@ img{
     box-sizing: border-box;
     border-radius: 7px;
 }
-
 .units-switch{
     font-size: 16px;
 }
@@ -98,8 +104,8 @@ img{
 }
 .dropdown-item{
     width: 100%;
-    height: 10px;
-    padding: 18px 5px;
+    min-height: 30px; 
+    padding: 10px 5px;
     margin: auto 0;
     box-sizing: border-box;
     border-radius: 8px;
@@ -118,6 +124,7 @@ img{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    cursor: pointer;
 }
 input[type="checkbox"]{
     appearance: none;
@@ -126,6 +133,12 @@ input[type="checkbox"]{
     position: relative;
     top: 0;
     right: 0;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked{
+     background-color: hsl(233, 67%, 56%);
 }
 input[type="checkbox"]:checked::after {
     content: '✓';
@@ -136,6 +149,7 @@ input[type="checkbox"]:checked::after {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* main content styling */
 .main-title{
     text-align: center;
@@ -156,7 +170,7 @@ input[type="checkbox"]:checked::after {
     justify-content: space-between;
     border-radius: 12px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: text;
 }
 .search:hover{
     background: hsl(243, 23%, 30%);
@@ -188,10 +202,6 @@ input[type="checkbox"]:checked::after {
 .search-btn:hover{
     background: hsl(233, 60%, 30%);
 }
-
-.current-weather{
-    
-}
 .main-card{
     padding: 20px;
     text-align: center;
@@ -206,7 +216,7 @@ input[type="checkbox"]:checked::after {
     line-height: 0.5;
 }
 .main-card img{
-    max-width: 70px;
+    max-width: 85px;
 }
 .main-detail{
     display: flex;
@@ -239,7 +249,8 @@ input[type="checkbox"]:checked::after {
     font-size: 24px;
 }
 
-.daily-forecast{
+/* Daily Forecast Section */
+.forecast{
     margin-bottom: 20px;
 }
 .forecast-grid{
@@ -252,16 +263,26 @@ input[type="checkbox"]:checked::after {
     border-radius: 12px;
     text-align: center;
     border: solid 1px hsl(240, 23%, 30%);
+    padding: 10px 5px;
 }
 .day-card img{
     max-width: 50px;
+    margin: 5px 0;
 }
-.day-card .temps{
+.day-card .temps{ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 14px;
 }
+.day-card .temp-max {
+    font-weight: bold;
+}
+.day-card .temp-min {
+    color: hsl(240, 6%, 70%);
+}
+
 
 .hourly-forecast{
     background:  hsl(243, 27%, 20%);
@@ -284,6 +305,7 @@ input[type="checkbox"]:checked::after {
     border: solid 1px hsl(240, 23%, 30%);
     border-radius: 10px;
     gap: 8px;
+    cursor: pointer;
 }
 .top-row img{
     max-width: 15px;
@@ -293,23 +315,34 @@ input[type="checkbox"]:checked::after {
     margin: 12px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: hsl(243, 20%, 24%);
     border: solid 2px hsl(240, 23%, 30%);
     border-radius: 12px;
 }
+.hour-item .time,
+.hour-item .temps {
+    line-height: 1.5; 
+}
 .hour-item .temps{
     text-align: right;
-    flex-basis: 60%;
+    flex-basis: 30%;
+    font-weight: bold;
 }
 .hour-item img{
     max-width: 46px;
+    flex-shrink: 0; 
 }
+
+
+/* Media Queries */
 @media (min-width: 500px){
     .weather-app{
         max-width: 950px;
     }
     .main-title{
         font-size: 35px;
+        margin: 25px 0 25px 0;
     }
     .search-section{
         display: flex;
@@ -319,7 +352,7 @@ input[type="checkbox"]:checked::after {
         margin: 25px auto;
         gap: 15px;
     }
-    .search-input{
+    .search{
         width: 100%;
         margin: 0;
     }
@@ -330,9 +363,9 @@ input[type="checkbox"]:checked::after {
     .main-grid-layout{
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        gap: 30px;
+        gap: 27px;
         box-sizing: border-box;
     }
     .left-column{
@@ -340,7 +373,13 @@ input[type="checkbox"]:checked::after {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        min-width: 500px;
     }
+    .right-column {
+        flex-basis: 40%;
+        min-width: 300px;
+    }
+
     .current-weather{
         box-sizing: border-box;
         margin: 0;
@@ -358,24 +397,24 @@ input[type="checkbox"]:checked::after {
         text-align: left;
     }
     .date-detail h2{
-        font-size: 24px;
+        font-size: 35px;
         line-height: 0.6;
     }
     .date-detail p{
-        font-size: 12px;
+        font-size: 16px;
     }
-    main-detail{
+    .main-detail{
         gap: 10px;
     }
     .small-cards{
         grid-template-columns: repeat(4, 1fr);
     }
-    .daily-forecast{
-        flex-grow: 2;
-    }
     .forecast-grid{
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 6px;
+    }
+
+    .day-card {
+        padding: 15px 5px;
     }
 }
-
-
