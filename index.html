@@ -65,189 +65,120 @@
 				  <div class="main-grid-layout">
 				    
 				    <div class="left-column">
-				      
-				  <section class="current-weather">
-				    <div class="main-card">
-				      <div class="date-detail">
-				    <h2 class="cityCountry">Berlin, Germany</h2>
-				    <p class="currDate">Saturday, Oct 4, 2025</p>
-				      </div>
-				    <div class="main-detail">
-				      <img src="images/icon-sunny.webp" alt="icon">
-				      <div class="temperature"><span class="temp">20</span>&deg;</div>
-				    </div>
-				    </div>
-				    <div class="small-cards">
-				      <div class="detail-box">
-				        <p>Feels like</p>
-				        <p class="value feels-like">18&deg;</p>
-				      </div>
-				      <div class="detail-box">
-				        <p>Humidity</p>
-				        <p class="value humidity">46%</p>
-				      </div>
-				      <div class="detail-box">
-				        <p>Wind</p>
-				        <p class="value wind">14 km/h</p>
-				      </div>
-				      <div class="detail-box">
-				        <p>Precipitation</p>
-				        <p class="value precip">0 mm</p>
-				      </div>
-				    </div>
-				  </section>
-				  
-				  <section class="daily-forecast">
-				    <h2>Daily Forecast</h2>
-				    <div class="forecast-grid">
-				    <div class="day-card">
-				      <p class="day">Sun</p>
-				      <img src="images/icon-rain.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-min">68&deg;</p>
-				      <p class="temp-max">57&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Mon</p>
-				      <img src="images/icon-storm.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">58&deg;</p>
-				      <p class="temp-min">20&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Tue</p>
-				      <img src="images/icon-rain.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">70&deg;</p>
-				      <p class="temp-min">23&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Wed</p>
-				      <img src="images/icon-snow.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">77&deg;</p>
-				      <p class="temp-min">55&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Thu</p>
-				      <img src="images/icon-fog.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">70&deg;</p>
-				      <p class="temp-min">29&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Fri</p>
-				      <img src="images/icon-drizzle.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">77&deg;</p>
-				      <p class="temp-min">61&deg;</p>
-				      </div>
-				    </div>
-				    <div class="day-card">
-				      <p class="day">Sat</p>
-				      <img src="images/icon-partly-cloudy.webp" alt="rain icon">
-				      <div class="temps">
-				      <p class="temp-max">77&deg;</p>
-				      <p class="temp-min">59&deg;</p>
-				      </div>
-				    </div>
-				    </div>
-				  </section>
-				    </div>
+              <div class="weather"> 
+
+                <section class="current-weather">
+                  <div class="main-card">
+                    <div class="date-detail">
+                      <h2 class="cityCountry">Berlin, Germany</h2>
+                      <p class="currDate">Saturday, Oct 4, 2025</p>
+                    </div>
+                    <div class="main-detail">
+                      <img src="images/icon-sunny.webp" alt="icon" class="weather-icon">
+                      <div class="temperature"><span class="temp">20</span>&deg;</div>
+                    </div>
+                  </div>
+                  <div class="small-cards">
+                    <div class="detail-box">
+                      <p>Feels like</p>
+                      <p class="value feels-like">18&deg;</p>
+                    </div>
+                    <div class="detail-box">
+                      <p>Humidity</p>
+                      <p class="value humidity">46%</p>
+                    </div>
+                    <div class="detail-box">
+                      <p>Wind</p>
+                      <p class="value wind">14 km/h</p>
+                    </div>
+                    <div class="detail-box">
+                      <p>Precipitation</p>
+                      <p class="value precip">0 mm</p>
+                    </div>
+                  </div>
+                </section>
+                
+                <section class="forecast">
+                  <h2>Daily Forecast</h2>
+                  <div class="forecast-grid">
+                    </div>
+                </section>
+
+              </div> </div>
 				    
 				    <div class="right-column">
-				  <section class="hourly-forecast">
-				    <div class="top-row">
-				    <h2>Hourly forecast</h2>
-				      <div class="dropdown" onclick="toggleDropdown()">
-				        <span>Saturday</span>
-				        <img src="images/icon-dropdown.svg" alt="dropdown icon">
-				      </div>
-				      
-				      <div class="dropdown-menu" id="dayDropdown">
-				        <div class="sub-menu">
-				          <div class="dropdown-item">
-				            <p>Monday</p>
+				      <section class="hourly-forecast">
+				        <div class="top-row">
+				          <h2>Hourly forecast</h2>
+				          <div class="dropdown" onclick="toggleDropdown()">
+				            <span>Saturday</span>
+				            <img src="images/icon-dropdown.svg" alt="dropdown icon">
 				          </div>
-				          <div class="dropdown-item">
-				            <p>Tuesday</p>
-				          </div>
-				          <div class="dropdown-item">
-				            <p>Wednesday</p>
-				          </div>
-				          <div class="dropdown-item">
-				            <p>Thursday</p>
-				          </div>
-				          <div class="dropdown-item">
-				            <p>Friday</p>
-				          </div>
-				          <div class="dropdown-item">
-				            <p>Saturday</p>
-				          </div>
-				          <div class="dropdown-item">
-				            <p>Sunday</p>
+				          
+				          <div class="dropdown-menu" id="dayDropdown">
+				            <div class="sub-menu">
+				              <div class="dropdown-item"><p>Monday</p></div>
+				              <div class="dropdown-item"><p>Tuesday</p></div>
+				              <div class="dropdown-item"><p>Wednesday</p></div>
+				              <div class="dropdown-item"><p>Thursday</p></div>
+				              <div class="dropdown-item"><p>Friday</p></div>
+				              <div class="dropdown-item"><p>Saturday</p></div>
+				              <div class="dropdown-item"><p>Sunday</p></div>
+				            </div>
 				          </div>
 				        </div>
-				      </div>
-				      
+				        <div class="hourly-list">
+				          <div class="hour-item">
+				            <img src="images/icon-sunny.webp" alt="icon">
+				            <p class="time">1 PM</p>
+				            <p class="temps">40&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-storm.webp" alt="icon">
+				            <p class="time">2 PM</p>
+				            <p class="temps">20&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-drizzle.webp" alt="icon">
+				            <p class="time">3 PM</p>
+				            <p class="temps">22&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-overcast.webp" alt="icon">
+				            <p class="time">4 PM</p>
+				            <p class="temps">31&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-rain.webp" alt="icon">
+				            <p class="time">5 PM</p>
+				            <p class="temps">19&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-fog.webp" alt="icon">
+				            <p class="time">6 PM</p>
+				            <p class="temps">16&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-snow.webp" alt="icon">
+				            <p class="time">7 PM</p>
+				            <p class="temps">17&deg;</p>
+				          </div>
+				          <div class="hour-item">
+				            <img src="images/icon-partly-cloudy.webp" alt="icon">
+				            <p class="time">8 PM</p>
+				            <p class="temps">22&deg;</p>
+				          </div>
+				        </div>
+				      </section>
 				    </div>
-				    <div class="hourly-list">
-				      <div class="hour-item">
-				        <img src="images/icon-sunny.webp" alt="icon">
-				        <p class="time">1 PM</p>
-				        <p class="temps">40&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-storm.webp" alt="icon">
-				        <p class="time">2 PM</p>
-				        <p class="temps">20&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-drizzle.webp" alt="icon">
-				        <p class="time">3 PM</p>
-				        <p class="temps">22&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-overcast.webp" alt="icon">
-				        <p class="time">4 PM</p>
-				        <p class="temps">31&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-rain.webp" alt="icon">
-				        <p class="time">5 PM</p>
-				        <p class="temps">19&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-fog.webp" alt="icon">
-				        <p class="time">6 PM</p>
-				        <p class="temps">16&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-snow.webp" alt="icon">
-				        <p class="time">7 PM</p>
-				        <p class="temps">17&deg;</p>
-				      </div>
-				      <div class="hour-item">
-				        <img src="images/icon-partly-cloudy.webp" alt="icon">
-				        <p class="time">8 PM</p>
-				        <p class="temps">22&deg;</p>
-				      </div>
-				    </div>
-				  </section>
-				  </div>
 				  </div>
 				    
 				<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Maluba</a>.
-  </div>
-				    </div>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+          Coded by <a href="#">Maluba</a>.
+        </div>
+      </div>
   
   <script src="javascript/script.js"></script>
 </body>
-	</html>
+</html>
