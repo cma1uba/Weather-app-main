@@ -19,6 +19,21 @@ const searchBox = document.querySelector(".search input");
   const weatherIcon = document.querySelector(".weather-icon");
 const currDate = document.querySelector(".currDate");
 
+function updateDateTime() {
+    const now = new Date();
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    };
+    currDate.textContent = now.toLocaleDateString("en-US", options);
+}
+
+  searchBtn.addEventListener("click", ()=>{
+    checkweather(searchBox.value);
+  })    
+
 async function checkweather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     
@@ -29,31 +44,26 @@ async function checkweather(city){
       var data = await response.json();
         
  document.querySelector(".cityCountry").innerHTML = data.name + ", " + data.sys.country;
-        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " °c";
+        
+updateDateTime();        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " °c";
+        
+        
+document.querySelector(".temp-min").innerHTML = Math.round(data.main.temp_min) + " °c";
+        
+document.querySelector(".temp-max").innerHTML = Math.round(data.main.temp_max) + " °c";        
     document.querySelector(".humidity").innerHTML = data.main.humidity + " %";
     document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + " km/h";
         
-document.querySelector(".precip").innerHTML = Math.round(data.main.rain) + " mm";        
+document.querySelector(".feels-like").innerHTML = Math.round(data.main.feels_like) + " °c"; 
         
-document.querySelector(".feels-like").innerHTML = Math.round(data.main.feels_like) + " °c";        
-        
-document.querySelector(".weather").style.display = "block";
-    document.querySelector(".error").style.display = "none";
+let precipitation = 0;
+if (weather.rain && weather.rain["1h"]) {
+    precipitation = Math.round(weather.rain["1h"]);
+}
+document.querySelector(".precip").innerHTML = precipitation;        
+        document.querySelector(".error").style.display = "none";
     
     }
     
     
   }
-
-function formatUnixTime(dtValue, offSet, options={}){
-    const data = new Date ((dtValue + offset)* 1000);
-    return datetoLocaleTimeString([], {timeZone: "UTC", ...options })
-}
-
-function getLongFormatDateTime(dtValue,offSet,options){
-    return formatUnixTime(dtValue,offSet,options)
-}
-  
-  searchBtn.addEventListener("click", ()=>{
-    checkweather(searchBox.value);
-  })        
