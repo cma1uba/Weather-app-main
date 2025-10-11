@@ -67,7 +67,7 @@ img{
     z-index: 100;
     width: 200px;
     max-height: 0;
-    margin-top: 5px;
+    margin-top: 7px;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
@@ -106,7 +106,7 @@ img{
     width: 100%;
     min-height: 30px;
     max-height: 45px;
-    padding: 5px;
+    padding: 6px;
     margin: auto 0;
     box-sizing: border-box;
     border-radius: 8px;
