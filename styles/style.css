@@ -67,7 +67,7 @@ img{
     z-index: 100;
     width: 200px;
     max-height: 0;
-    margin-top: 7px;
+    margin-top: 5px;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
@@ -78,7 +78,7 @@ img{
     border: 2px solid hsl(240, 23%, 30%);
     border-radius: 10px;
     background: hsl(243, 23%, 24%);
-    padding: 10px!
+    padding: 10px;
 }
 .sub-menu hr{
     border: 0;
@@ -106,7 +106,7 @@ img{
     width: 100%;
     min-height: 30px;
     max-height: 45px;
-    padding: 6px;
+    padding: 5px;
     margin: auto 0;
     box-sizing: border-box;
     border-radius: 8px;
@@ -261,7 +261,7 @@ input[type="checkbox"]:checked::after {
 }
 .day-card{
     background: hsl(243, 23%, 24%);
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
     border: solid 1px hsl(240, 23%, 30%);
     padding: 10px 5px;
@@ -366,14 +366,14 @@ input[type="checkbox"]:checked::after {
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        gap: 27px;
+        gap: 22px;
         box-sizing: border-box;
     }
     .left-column{
         flex-basis: 60%;
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 22px;
         min-width: 500px;
     }
     .right-column {
