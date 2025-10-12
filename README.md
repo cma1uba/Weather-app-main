@@ -4,7 +4,7 @@
 
 Weather Now is a dynamic, user-friendly web application designed to provide instant current weather conditions and a multi-day forecast. The app utilizes the OpenWeatherMap API and browser Geolocation to offer location-aware weather data, ensuring users see relevant information immediately upon load.
 
-##🛠️ Technology Stack
+## 🛠️ Technology Stack
 
  -HTML
 
@@ -12,7 +12,7 @@ Weather Now is a dynamic, user-friendly web application designed to provide inst
 
  -Javascript(ES6+)
 
-##✨ Features
+## ✨ Features
 1. Geolocation-Based Auto-Loading (On Load)
 Automatic Detection: Uses the browser's Geolocation API to instantly detect the user's latitude and longitude upon page load.
 
