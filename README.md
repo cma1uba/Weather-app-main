@@ -1,7 +1,6 @@
+# Weather Now: Dynamic Local Forecast App
 
-#Weather Now: Dynamic Local Forecast App
-
-##Overview
+## Overview
 
 Weather Now is a dynamic, user-friendly web application designed to provide instant current weather conditions and a multi-day forecast. The app utilizes the OpenWeatherMap API and browser Geolocation to offer location-aware weather data, ensuring users see relevant information immediately upon load.
 
