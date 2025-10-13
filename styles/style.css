@@ -343,7 +343,7 @@ input[type="checkbox"]:checked::after {
     .weather-app{
         max-width: 1400px;
         height: 100vh;
-        padding: 0 30px;
+        padding: 20px 30px;
     }
     .app-header{
         padding: 0 30px;
@@ -378,14 +378,14 @@ input[type="checkbox"]:checked::after {
         box-sizing: border-box;
     }
     .left-column{
-        flex-basis: 60%;
+        flex-basis: 68%;
         display: flex;
         flex-direction: column;
         gap: 22px;
         min-width: 500px;
     }
     .right-column {
-        flex-basis: 40%;
+        flex-basis: 32%;
         min-width: 300px;
     }
 
@@ -427,6 +427,6 @@ input[type="checkbox"]:checked::after {
         padding: 15px 5px;
     }
     .hourly-forecast{
-        max-width: 320px;
+        max-width: 375px;
     }
 }
