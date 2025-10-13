@@ -107,7 +107,7 @@ function getCoordsAndWeather() {
             (error) => {
                 console.error("Geolocation error:", error);
                 document.querySelector(".error").style.display = "block";
-                document.querySelector(".error p").textContent = "Location access denied. Loading default city (London).";
+                document.querySelector(".error p").textContent = "Location access denied. Loading default city (Berlin).";
                 // Fallback to a well-known city
                 checkweather("London"); 
             },
