@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -342,6 +345,9 @@ input[type="checkbox"]:checked::after {
         height: 100vh;
         padding: 0 30px;
     }
+    .app-header{
+        padding: 0 30px;
+    }
     .main-title{
         font-size: 35px;
         margin: 25px 0 25px 0;
@@ -364,6 +370,7 @@ input[type="checkbox"]:checked::after {
     }
     .main-grid-layout{
         width: 100%;
+        margin: 0 auto;
         display: flex;
         align-items: flex-start;
         justify-content: center;
