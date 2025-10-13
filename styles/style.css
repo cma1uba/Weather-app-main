@@ -287,7 +287,7 @@ input[type="checkbox"]:checked::after {
 .hourly-forecast{
     background:  hsl(243, 27%, 20%);
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 15px;
 }
 .hourly-forecast .top-row{
@@ -340,6 +340,7 @@ input[type="checkbox"]:checked::after {
     .weather-app{
         max-width: 1400px;
         height: 100vh;
+        padding: 0 30px;
     }
     .main-title{
         font-size: 35px;
@@ -417,5 +418,8 @@ input[type="checkbox"]:checked::after {
 
     .day-card {
         padding: 15px 5px;
+    }
+    .hourly-forecast{
+        max-width: 320px;
     }
 }
