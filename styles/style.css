@@ -421,5 +421,6 @@ input[type="checkbox"]:checked::after {
     }
     .hourly-forecast{
         max-width: 400px;
+        min-height: 100vh;
     }
 }
