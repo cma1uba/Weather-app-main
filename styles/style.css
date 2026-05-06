@@ -17,7 +17,7 @@ img{
 .weather-app{
     background: hsl(243, 96%, 9%);
     width: 100%;
-    max-width: 360px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 15px;
 }
