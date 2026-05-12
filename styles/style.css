@@ -207,6 +207,7 @@ input[type="checkbox"]:checked::after {
 .date-detail h2{
     font-size: 30px;
     line-height: 0.5;
+    padding: 15px 0;
 }
 .main-card img{
     max-width: 85px;
