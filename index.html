@@ -3,42 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Weather Now</title>
 </head>
 <body>
-    <main>
-        <nav class="nav-bar">
+    <main class="main-container">
+        <header class="header">
             <div class="logo">
-                <img src="images/logo.svg" alt="logo image">
+                <a href="#"><img src="images/logo.svg" alt="logo image"></a>
             </div>
-            <div class="units-toggle">
+            <div class="units-container">
                 <img src="images/icon-units.svg" alt="units icon">
-                <p>Units</p>
-                <img src="images/icon-dropdown.svg" alt="drop-down icon">
+                <div class="units-text">Units</div>
+                <img src="images/icon-dropdown.svg" alt="dropdown icon">
             </div>
-        </nav>
-        <section class="hero-search">
-            <h1>How's the sky looking today?</h1>
-            <div class="search-div">
-                <div class="search-box">
-                    <img src="images/icon-search.svg" alt="search icon">
-                <input type="text" id="search-input" placeholder="Search for a city...">
+        </header>
+        <h1 class="main-title">How's the sky looking today?</h1>
+        <div class="main-content">
+            <div class="search-container">
+                <div class="input-field">
+                    <img src="images/icon-search.svg" alt="">
+                    <input type="text" id="search-input" placeholder="Search for a place...">
                 </div>
-                <button id="search-btn">Search</button>
+                <button id="search-button">Search</button>
             </div>
-        </section>
-        <section class="today-card">
-            <h2>Lusaka, Zambia</h2>
-            <p>Wed, 27 May, 2026</p>
-            <div class="today-temp-div">
-                <img src="images/icon-sunny.webp" alt="weather icon">
-                <span id="today-temp">17°</span>
+            <div class="content-container">
+                <section class="left-content">
+                    <div class="current-weather">
+                        <div class="weather-overview">
+                            <div class="location-info">
+                                <h2 id="city-name">Lusaka, Zambia</h2>
+                                <p id="date">Thursday, 04 June, 2026</p>
+                            </div>
+                            <div class="current-temp">
+                                <img src="images/icon-sunny.webp" alt="">
+                                <span id="temp-info">20</span>
+                            </div>
+                        </div>
+                        <div class="current-weather-grid">
+                            <div class="feels-like detail-card">
+                                <p>Feels Lie</p>
+                                <span id="feels-like">18</span>
+                            </div>
+                            <div class="humidity detail-card">
+                                <p>Humidity</p>
+                                <span id="humidity">46%</span>
+                            </div>
+                            <div class="wind detail-card">
+                                <p>Wind</p>
+                                <span id="wind-speed">14km/h</span>
+                            </div>
+                            <div class="precipitation detail-card">
+                                <p>Precipitation</p>
+                                <span id="precip">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-forecast">
+                        <h3 class="daily-title">Daily forecast</h3>
+                        <div class="daily-forecast-grid">
+                            <div class="daily-card">
+                                <p>Thu</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Fri</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Sat</p>
+                                <img src="images/icon-overcast.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Thu</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Thu</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Thu</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                            <div class="daily-card">
+                                <p>Thu</p>
+                                <img src="images/icon-sunny.webp" alt="weather icon">
+                                <div class="daily-temp">
+                                    <span class="min-temp">14</span>
+                                    <span class="max-temp">20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="right-content">
+                <div class="hourly-container">
+                    <div class="hourly-header">
+                        <h3>Hourly forecast</h3>
+                        <button class="forecast-dropdown">
+                            <span>Thursday</span>
+                            <img src="images/icon-dropdown.svg" alt="dropdown icon">
+                        </button>
+                    </div>
+                    <div class="hourly-forecast-list">
+                        <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                         <div class="hourly-forecast">
+                            <img src="images/icon-drizzle.webp" alt="weather icon">
+                            <p class="time">3 PM</p>
+                            <span class="hourly-temp">20</span>
+                        </div>
+                    </div>
+                </div>
+                </section>
             </div>
-        </section>
+            
+        </div>
     </main>
 </body>
 </html>
