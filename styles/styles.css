@@ -100,7 +100,7 @@ body{
     gap: 34px;
 }
 .weather-overview{
-    background-image: url(/images/bg-today-large.svg);
+    background-image: url(./images/bg-today-large.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
